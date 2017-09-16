@@ -46,8 +46,9 @@ public:
 };
 
 
+/*
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution::convert("PAYPALISHIRING", 3);
     return 0;
-}
+} */
