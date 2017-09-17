@@ -6,15 +6,14 @@
 //  Copyright © 2017 psrivastav18. All rights reserved.
 //
 
-#include "binaryTree.hpp"
-
+#include "customAllocator.hpp"
 
 int main()
 {
-    CustomAllocator c;
+    
+    n_memory::CustomAllocator c;
     char* ptr = c.allocate(100);
-
-
+    
     /*
     printf( "adress %p ", ptr );
     ptr[0] = 'a';
@@ -39,5 +38,10 @@ int main()
     std::cerr << "content : " << ptr << std::endl;
     
     c.deallocate(ptr);
+    
+    /*
+    int32_t result = n_memory::test::CustomAllocatorTest::testAllocation();
+    EXPECT_EQ("TEST ALLOCATION", result , 0 ); */
+    
     
 }
